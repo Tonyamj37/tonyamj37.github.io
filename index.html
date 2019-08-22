@@ -2,40 +2,78 @@
 <html lang="en-us">
 
 <head>
+  <!--bootstrap css-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta charset="UTF-8">
   <title>CSS Stylesheets with Relative Paths</title>
-
-  <!-- This line is money! It points your HTML to the CSS file. -->
-  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 
 <body>
-  <header>
-    <h1>Student Bio</h1>
-  </header>
-
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">About Me</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Bio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Menu 
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="contact.html">Contact</a>
+                    <a class="dropdown-item" href="portfolio.html">Portfolio</a>
+                    <a class="dropdown-item" href="index.html">Bio</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="resume.html">Resume</a>
+                  </div>
+                </li>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav> 
+    </header>
   <div class="container">
-
-    <section id="main-bio">
-
-      <h2>Tonya Johnson</h2>
-
-      <img id="bio-image" src="https://placehold.it/200x200" alt="Your Name">
-
-      <p>Accomplished Master’s level graduate of Communication Studies. Eager to contribute advanced leadership and savvy communications acumen towards optimizing the goals of business and consumer market programs. Offers a proactive approach to for-profit & non- profit marketing and is accomplished in successful web development, preparing flawless presentations, developing organizational practices, streamlining correspondence, increasing business visibility, and producing favorable outcomes. Core Competencies: Informatics & Data Analysis, Public Relations, Crisis Communication and Web Design. <a href="http://www.lipsum.com/></p>
-    </section>
-
-    <section id="contact-info">
-      <h2>CONNECT WITH ME!</h2>
-      <ul>
-        <li><strong>Email:</strong> <a href="#">tonya.johnson@marketyourself1st.com</a></li>
-        <li><strong>Github:</strong> <a href="#">Tonyamj37</a></li>
-        <li><strong>Portfolio:</strong> <a href="#">coming soon!</a></li>
-      </ul>
-    </section>
+  
+  <div class="page-header"></div>
+    <h1><strong>HELLO, FUTURE EMPLOYER</strong></h1>  
+     
   </div>
+  
+  </div>
+
+  
+  <!-- <div class="container"> -->
+    <section id="main-bio" style="height: 500px">
+
+      <div class="image-imagecontainer">
+        <img id="bio-image" src="./images/headshot.jpg" alt="Your Name"> </div>
+        
+        <h2>I am Tonya Johnson,</h2>
+ 
+        <p id="summary"> A Full-Stack Web Developer and recent Master's level graduate from the University of Akron School of Communications. Eager to contribute advanced leadership and savvy communications acumen towards optimizing the goals of business and consumer market programs. I offer a proactive approach to for-profit & non- profit marketing and have accomplished successful web development, preparing flawless presentations, developing organizational practices, streamlining correspondence, increasing business visibility, and producing favorable outcomes. Core Competencies: Informatics & Data Analysis, Public Relations, Crisis Communication and Web Design. </p>
+        
+    </section>
+  <!-- </div> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 </body>
 
